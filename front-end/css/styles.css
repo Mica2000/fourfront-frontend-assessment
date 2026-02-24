@@ -1,45 +1,145 @@
 body {
-  background: #2f2f2f;
-  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+.page-wrapper {
+  max-width: 480px;
+  margin: 40px auto;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.dark-section {
+  background: #3a3a3a;
+  padding: 30px 20px;
+}
+
+.white-section {
+  background: #ffffff;
+  padding: 30px 20px;
+}
+
+.inner-container {
+  width: 100%;
 }
 
 .profile-card {
   background: #3a3a3a;
-  border: 1px solid gold;
+  border: 1px solid #e8b800;
+  border-radius: 14px;
+  padding: 18px;
+ 
 }
 
-.stat-img {
-  width: 28px;
-  height: 28px;
+.profile-img {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .stat-card {
-  border-radius: 10px;
-  font-weight: bold;
+  border-radius: 14px;
+  padding: 18px;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.pink { background: #f4c2c2; color: #000; }
-.green { background: #d4edbc; color: #000; }
-.yellow { background: #ffe5a3; color: #000; }
+.stat-card h2 {
+  font-weight: 800;
+  margin: 0;
+}
 
-.recommendation {
+.stat-img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+.pink   { background: #f4b8b8; }
+.green  { background: #c5e8a3; }
+.yellow { background: #fad97a; }
+
+.recommend-card {
   background: #3a3a3a;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
 }
 
-.foundation-btn {
-  background: #d4af37;
-  color: #fff;
+.gold { color: #e8b800; }
+
+.accordion-item {
+  border: none !important;
+  margin-bottom: 14px;
 }
 
-.economy-btn {
-  background: #7a8ca3;
-  color: #fff;
+.foundation {
+  background: #e8b800 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 10px !important;
 }
 
-.membership-content {
-  background: #e9ecef;
-  color: #000;
-  padding: 15px;
-  border-radius: 5px;
+.economy {
+  background: #2a5f96 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-radius: 10px !important;
+}
+
+/* Keep colors when open */
+.accordion-button:not(.collapsed).foundation {
+  background: #e8b800 !important;
+  color: #ffffff !important;
+}
+
+.accordion-button:not(.collapsed).economy {
+  background: #2a5f96 !important;
+  color: #ffffff !important;
+}
+
+/* Remove bootstrap blue glow */
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+/* Make arrow white */
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+/* Accordion Content */
+.accordion-body {
+  background: #3a3a3a;
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border-radius: 0 0 10px 10px;
+}
+
+.membership-note {
+  background: #e8b800;
+  padding: 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.membership-note a {
+  color: #ffffff;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: #e8b800;
+  color: #ffffff;
+  padding: 18px;
+  font-weight: 700;
 }
